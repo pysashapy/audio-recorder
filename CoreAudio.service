@@ -1,0 +1,14 @@
+[Unit]
+Description=CoreAudio
+
+[Service]
+Type=forking
+WorkingDirectory=~/audio-recorder
+
+User=root
+Group=root
+
+ExecStart=python3 Core.py
+
+[Install]
+WantedBy=multi-user.target
