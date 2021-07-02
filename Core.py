@@ -56,7 +56,7 @@ class Microphone:
                         input=True,
                         output=True,
                         frames_per_buffer=self.CHUNK)
-
+        print("[INFO] YES GetPyAudio")
     def getAudio(self):
         while True:
             frames = []
@@ -65,9 +65,12 @@ class Microphone:
             for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):
                 data = self.stream.read(self.CHUNK)
                 frames.append(data)
+            print("[INFO] YES getAudio")
+
             Thread(target=self.save, args=(frames, time_, )).start()
 
     def save(self, frames, time):
+        print("[INFO] YES getAudio")
         name = time.strftime("%H_%M.wav")
         path = time.strftime("%Y/%m/%d/")
         mkdir_p("/home/ftp/uploads/" + path)
