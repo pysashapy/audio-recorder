@@ -3,7 +3,7 @@ Description=CoreAudio
 
 [Service]
 Type=forking
-WorkingDirectory=~/audio-recorder
+WorkingDirectory=/root/audio-recorder
 
 User=root
 Group=root
