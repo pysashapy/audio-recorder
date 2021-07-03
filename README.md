@@ -2,10 +2,9 @@
 
 ## Install packets
 ```Bash	
-sudo apt-get update && apt upgrade -y
 sudo apt-get install python3-flask python3-pyaudio python3-paramiko git
 ```
-## Installation
+## InstallationCancel changes
 ```Bash	
 git clone https://github.com/pysashapy/audio-recorder.git
 ```
