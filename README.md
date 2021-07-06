@@ -2,7 +2,7 @@
 
 ## Install packets
 ```Bash	
-sudo apt-get install python3-pip git portaudio19-dev 
+sudo apt-get install python3-pip git portaudio19-dev ffmpeg
 ```
 ```Bash	
 python3 -m pip install pyaudio flask paramiko pydub
