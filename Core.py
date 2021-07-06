@@ -8,7 +8,7 @@ import pyaudio
 import pydub
 
 __PATH__ = "Data/"
-__WAITING_TIME__ = 60
+__WAITING_TIME__ = 60*10
 
 client = paramiko.SSHClient()
 client.load_system_host_keys()
