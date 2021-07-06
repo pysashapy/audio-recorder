@@ -141,7 +141,7 @@ class Microphone:
         sound = pydub.AudioSegment.from_wav(__PATH__ + path + name)
         sound.export(__PATH__ + path + namemp3, format="mp3")
         os.remove(__PATH__ + path + name)
-        Thread(target=sftp.put, args=(__PATH__ + path + namemp3, "/home/ftp/uploads/" + path + namemp3)).start()
+        Thread(target=sftp.put, args=(__PATH__ + path + namemp3, f"/home/ftp/{__NAME_FTP_PATH__}/uploads/" + path + namemp3)).start()
 
 
 if __name__ == '__main__':
