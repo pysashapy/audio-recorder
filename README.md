@@ -5,7 +5,7 @@
 sudo apt-get install python3-pip git portaudio19-dev 
 python3 -m pip install pyaudio flask paramiko pydub
 ```
-## InstallationCancel changes
+## Installation
 ```Bash	
 git clone https://github.com/pysashapy/audio-recorder.git
 ```
