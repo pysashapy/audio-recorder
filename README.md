@@ -5,7 +5,7 @@
 sudo apt-get update
 ```
 ```Bash	
-sudo apt-get install python3-pip git portaudio19-dev ffmpeg
+sudo apt-get install python3-pip git portaudio19-dev ffmpeg python3-pyaudio python3-flask python3-paramiko python3-pydub
 ```
 ```Bash	
 python3 -m pip install pyaudio flask paramiko pydub
