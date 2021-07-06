@@ -2,11 +2,8 @@
 Description=CoreAudio
 
 [Service]
-Type=forking
+Type=simple
 WorkingDirectory=/root/audio-recorder
-
-User=root
-Group=root
 
 ExecStart=python3 Core.py
 
