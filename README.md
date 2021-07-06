@@ -20,3 +20,6 @@ cd audio-recorder
 ```Bash	
 cp coreaudio.service /etc/systemd/system/coreaudio.service
 ```
+```Bash	
+systemctl start coreaudio
+```
