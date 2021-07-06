@@ -2,7 +2,8 @@
 
 ## Install packets
 ```Bash	
-sudo apt-get install python3-flask python3-pyaudio python3-paramiko git
+sudo apt-get install python3-pip git portaudio19-dev 
+python3 -m pip install pyaudio flask paramiko pydub
 ```
 ## InstallationCancel changes
 ```Bash	
