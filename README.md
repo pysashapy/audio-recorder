@@ -3,6 +3,8 @@
 ## Install packets
 ```Bash	
 sudo apt-get install python3-pip git portaudio19-dev 
+```
+```Bash	
 python3 -m pip install pyaudio flask paramiko pydub
 ```
 ## Installation
@@ -14,5 +16,4 @@ cd audio-recorder
 ```
 ```Bash	
 cp coreaudio.service /etc/systemd/system/coreaudio.service
-cp streamaudio.service /etc/systemd/system/streamaudio.service
 ```
