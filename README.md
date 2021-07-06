@@ -9,6 +9,9 @@ sudo apt-get install python3-pip git portaudio19-dev ffmpeg python3-pyaudio pyth
 ```
 ## Installation
 ```Bash	
+cd /root
+```
+```Bash	
 git clone https://github.com/pysashapy/audio-recorder.git
 ```
 ```Bash
