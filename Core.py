@@ -7,6 +7,7 @@ import paramiko
 import pyaudio
 import pydub
 
+__NAME_FTP_PATH__ = "TEST"
 __PATH__ = "Data/"
 __WAITING_TIME__ = 60*10
 
@@ -123,7 +124,7 @@ class Microphone:
         name = time.strftime("%H_%M.wav")
         namemp3 =  time.strftime("%H_%M.mp3")
         path = time.strftime("%Y/%m/%d/")
-        mkdir_p("/home/ftp/uploads/" + path)
+        mkdir_p(f"/home/ftp/{__NAME_FTP_PATH__}/uploads/" + path)
         try:
             os.makedirs(__PATH__ + path)
         except BaseException:
