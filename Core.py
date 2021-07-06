@@ -93,9 +93,9 @@ class Microphone:
         def audio():
             # start Recording
             def sound():
-                sampleRate = 44100
+                sampleRate = self.RATE
                 bitsPerSample = 16
-                channels = 2
+                channels = self.CHANNELS
                 wav_header = genHeader(sampleRate, bitsPerSample, channels)
 
                 lastData = None
