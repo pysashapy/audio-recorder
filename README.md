@@ -2,6 +2,9 @@
 
 ## Install packets
 ```Bash	
+apt-get update
+```
+```Bash	
 sudo apt-get install python3-pip git portaudio19-dev ffmpeg
 ```
 ```Bash	
