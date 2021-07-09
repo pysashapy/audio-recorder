@@ -65,7 +65,7 @@ class Microphone:
             frames = []
             time_ = datetime.now()
             for i in range(0, int(self.RATE / self.CHUNK * self.RECORD_SECONDS)):
-                self.data = self.stream.read(self.CHUNK)
+                self.data = self.stream.read(self.CHUNK, exception_on_overflow=False)
                 frames.append(self.data)
             Thread(target=self.save, args=(frames, time_, )).start()
 
